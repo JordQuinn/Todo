@@ -16,7 +16,7 @@
 {{#todos}}
 <form action="/todo/complete" method="post">
   <input type="hidden" name="id" value="{{id}}">
-  <button type="submit" name="button" class="checked">Mark as Complete</button> {{newtodo}}
+  <button type="submit" name="button" class="checked">Mark as Complete</button>&emsp;&emsp;{{newtodo}}
 </form><br>
 
 {{/todos}}
@@ -24,7 +24,7 @@
 <h4>Completed Tasks:</h4>
 
   {{#completed}}
-  <p>{{newtodo}}</p>
+  <p>{{.}}</p>
   {{/completed}}
 
 </body>
